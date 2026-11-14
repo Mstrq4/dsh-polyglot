@@ -1,0 +1,77 @@
+name: "Language request / طلب لغة"
+description: "Propose a future project language and a practical native-reviewed implementation path."
+title: "[Language]: "
+labels: ["enhancement", "translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        DSH Polyglot is Arabic-first. Additional project languages are planned, not shipped.
+        A request is not a support or delivery promise. Arabic and English proposals are welcome.
+        Do not upload credentials, private URLs, profile exports, or conversation content.
+  - type: input
+    id: language
+    attributes:
+      label: "Language name in English and in the language itself"
+      placeholder: "French / Français"
+    validations:
+      required: true
+  - type: input
+    id: locale-id
+    attributes:
+      label: "Proposed locale ID"
+      description: "Give a BCP 47-style ID if known; otherwise say needs review. Regional variants need an explanation."
+      placeholder: "fr / needs review"
+    validations:
+      required: true
+  - type: dropdown
+    id: native-availability
+    attributes:
+      label: "Is this language already in DSH's native language list?"
+      description: "DSH has eight native languages. Existing IDs may need dictionary extensions; unsupported IDs need native language registration. Do not assume either path is already implemented here."
+      options:
+        - "Needs verification"
+        - "Already listed by DSH"
+        - "Not listed by DSH"
+    validations:
+      required: true
+  - type: dropdown
+    id: direction
+    attributes:
+      label: "Interface writing direction"
+      options:
+        - "LTR (left to right)"
+        - "RTL (right to left)"
+        - "Needs native-speaker review"
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: "Who would benefit, and what is missing?"
+      description: "Describe concrete interface needs and what native DSH support does not cover; no private user examples."
+    validations:
+      required: true
+  - type: textarea
+    id: reviewers
+    attributes:
+      label: "Translation and native-speaker review plan"
+      description: "Offer terminology, grammar, and placeholder review if you can. Use GitHub handles only with permission, not personal contact details; no commitment is required."
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: "Possible implementation and validation"
+      description: "Optional: cover native definition or owned extension, English fallback, namespace/key/placeholder parity, scoped direction, cleanup, saved preferences, tests, and actual-window checks. Copying the Arabic directory alone is insufficient."
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Request boundaries"
+      options:
+        - label: "I understand this language is a proposal, not a shipped project feature or guaranteed roadmap date."
+          required: true
+        - label: "I understand translations must preserve original user messages and must not use network translation."
+          required: true
+        - label: "This request contains no credentials, private URLs, profile tokens, or private conversation content."
+          required: true

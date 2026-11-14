@@ -1,0 +1,10 @@
+# Bundle defaults are below the user's durable preference override.
+# Client activation never calls setLocale, so later language switches stick.
+- id: locale
+  name: '@deepseek-ai/dsh-client-locale'
+  config:
+    preference: ar
+- insert:
+    - id: dsh-arabic-ui
+      name: '@local/dsh-arabic-ui'
+      config: {}

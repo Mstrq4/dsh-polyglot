@@ -1,0 +1,595 @@
+{
+  "version": "0.2.2-rc.2",
+  "license": "MIT; first-party DeepSeek Harness English locale resources, source manifests verified",
+  "sources": [
+    {
+      "namespace": "common",
+      "package": "@deepseek-ai/dsh-client-locale",
+      "source": "src/locales/en.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 41,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.locale",
+      "package": "@deepseek-ai/dsh-client-locale",
+      "source": "src/locales/settings.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 1,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "account.notifications",
+      "package": "@deepseek-ai/dsh-client-ui-account-notifications",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 1,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.agentPreset",
+      "package": "@deepseek-ai/dsh-client-ui-agent-preset",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 47,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": [
+        "dsh-client-ui-agent-preset/src/client/guide-locales.ts"
+      ]
+    },
+    {
+      "namespace": "agent-team",
+      "package": "@deepseek-ai/dsh-client-ui-agent-team",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 30,
+      "registrationSource": "src/client/mount.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "approval",
+      "package": "@deepseek-ai/dsh-client-ui-approval",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 7,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "chat",
+      "package": "@deepseek-ai/dsh-client-ui-chat",
+      "source": "src/client/locale.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 207,
+      "registrationSource": "src/client/apply.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "command",
+      "package": "@deepseek-ai/dsh-client-ui-commands",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 28,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": [
+        "dsh-commands/src/builtin.ts"
+      ]
+    },
+    {
+      "namespace": "contextMenu",
+      "package": "@deepseek-ai/dsh-client-ui-context-menu",
+      "source": "src/client/locales.ts",
+      "symbol": "dictionaries.en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 2,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "conversation",
+      "package": "@deepseek-ai/dsh-client-ui-conversation",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 392,
+      "registrationSource": "src/client/apply.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "cordis",
+      "package": "@deepseek-ai/dsh-client-ui-cordis",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 51,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "deliverables",
+      "package": "@deepseek-ai/dsh-client-ui-deliverables",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 57,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "entryCustomization",
+      "package": "@deepseek-ai/dsh-client-ui-entry-customization",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 7,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "fileActions",
+      "package": "@deepseek-ai/dsh-client-ui-file-actions",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 12,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "fileDrag",
+      "package": "@deepseek-ai/dsh-client-ui-file-drag",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 1,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "goal",
+      "package": "@deepseek-ai/dsh-client-ui-goal",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 12,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "slash.menu",
+      "package": "@deepseek-ai/dsh-client-ui-input-trigger",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 9,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "job",
+      "package": "@deepseek-ai/dsh-client-ui-jobs",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 38,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "shortcuts.layout",
+      "package": "@deepseek-ai/dsh-client-ui-layout",
+      "source": "src/client/shortcut-locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 1,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "feedback",
+      "package": "@deepseek-ai/dsh-client-ui-message-feedback",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 20,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "model",
+      "package": "@deepseek-ai/dsh-client-ui-model-selection",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 23,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "open-in-app",
+      "package": "@deepseek-ai/dsh-client-ui-open-in-app",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 59,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.permission",
+      "package": "@deepseek-ai/dsh-client-ui-permission-presets",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 12,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "permission.access",
+      "package": "@deepseek-ai/dsh-client-ui-permission-presets",
+      "source": "src/client/locales.ts",
+      "symbol": "accessEn",
+      "version": "0.2.2-rc.2",
+      "keyCount": 17,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "plan",
+      "package": "@deepseek-ai/dsh-client-ui-plan",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 16,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "pluginManager",
+      "package": "@deepseek-ai/dsh-client-ui-plugin-manager",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 293,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "reference",
+      "package": "@deepseek-ai/dsh-client-ui-reference",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 15,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "schedule.catalog",
+      "package": "@deepseek-ai/dsh-client-ui-schedule",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 76,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": [
+        "dsh-client-ui-schedule/src/client/frequency-locales.ts"
+      ]
+    },
+    {
+      "namespace": "schedule.manager",
+      "package": "@deepseek-ai/dsh-client-ui-schedule",
+      "source": "src/client/task-manager-locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 215,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": [
+        "dsh-client-ui-schedule/src/client/frequency-locales.ts"
+      ]
+    },
+    {
+      "namespace": "secretMask",
+      "package": "@deepseek-ai/dsh-client-ui-secret-mask",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 2,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.account",
+      "package": "@deepseek-ai/dsh-client-ui-settings-account",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 93,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": [
+        "dsh-client-ui-settings-account/src/client/locales/onboarding.ts"
+      ]
+    },
+    {
+      "namespace": "settings.agentLoop",
+      "package": "@deepseek-ai/dsh-client-ui-settings-agent-loop",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 12,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings",
+      "package": "@deepseek-ai/dsh-client-ui-settings-general",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 65,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.models",
+      "package": "@deepseek-ai/dsh-client-ui-settings-models",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 173,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.pluginInventory",
+      "package": "@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 37,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.plugins",
+      "package": "@deepseek-ai/dsh-client-ui-settings-plugins",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 5,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.sessionLog",
+      "package": "@deepseek-ai/dsh-client-ui-settings-session-log",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 4,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.shell",
+      "package": "@deepseek-ai/dsh-client-ui-settings-shell",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 14,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.subagent",
+      "package": "@deepseek-ai/dsh-client-ui-settings-subagent",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 35,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.webSearch",
+      "package": "@deepseek-ai/dsh-client-ui-settings-web-search",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 43,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "shortcuts",
+      "package": "@deepseek-ai/dsh-client-ui-shortcuts",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 56,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "sidebar",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 10,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "sidebarBrowser",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-browser",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 26,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "sidebarDocumentPreview",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 22,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "sidebarFiles",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-files",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 53,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "sidebarRight",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-right",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 38,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "sidebarTerminal",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-terminal",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 33,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "skill",
+      "package": "@deepseek-ai/dsh-client-ui-skill",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 8,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "subagent",
+      "package": "@deepseek-ai/dsh-client-ui-subagent",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 47,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "settings.theme",
+      "package": "@deepseek-ai/dsh-client-ui-theme",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 25,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "trajectory",
+      "package": "@deepseek-ai/dsh-client-ui-trajectory",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 199,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "question",
+      "package": "@deepseek-ai/dsh-client-ui-user-questions",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 31,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "workflowRun",
+      "package": "@deepseek-ai/dsh-client-ui-workflow-run",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 18,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "workspace",
+      "package": "@deepseek-ai/dsh-client-ui-workspace",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 119,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "messageQuotes",
+      "package": "@deepseek-ai/dsh-message-quotes",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 1,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "session-log-download",
+      "package": "@deepseek-ai/dsh-session-log-export",
+      "source": "src/client/locales.ts",
+      "symbol": "en",
+      "version": "0.2.2-rc.2",
+      "keyCount": 14,
+      "registrationSource": "src/client/index.ts",
+      "dependencies": []
+    },
+    {
+      "namespace": "directory-browser",
+      "package": "@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "source": "src/client/index.ts",
+      "symbol": "apply/dictionaries[locale='en']",
+      "version": "0.2.2-rc.2",
+      "keyCount": 13,
+      "registrationSource": "src/client/index.ts",
+      "activation": "conditional browse backend; native picker currently active"
+    }
+  ],
+  "excluded": [
+    "Inactive dsh-client-ui-action-cards, dsh-client-ui-creation-recommendations, dsh-client-ui-plugin-market, dsh-client-ui-plugin-recommendations",
+    "Inactive experimental Client UI cot-translation, forge, stats, voice-input",
+    "Native OS dialogs and separate Electron renderer pages are outside locale namespace registration"
+  ],
+  "desktopCoverage": [
+    "desktop-channel-toast and host-release-change use settings namespace",
+    "desktop-onboarding uses settings.account namespace with onboardingEn spread"
+  ]
+}

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Questions and contribution ideas / الأسئلة وأفكار المساهمة"
+    url: "https://github.com/Mstrq4/dsh-polyglot/discussions"
+    about: "Discuss usage, translation terminology, and proposals in Arabic or English without posting private data."
+  - name: "Security reporting guidance"
+    url: "https://github.com/Mstrq4/dsh-polyglot/security/policy"
+    about: "Read the private-reporting policy; do not put credentials, exploit details, or vulnerabilities in public issues."

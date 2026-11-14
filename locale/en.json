@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Arabic interface",
+    "description": "Adds Arabic to the native Language selector and translates the supported interface dictionaries. The bundle initially selects Arabic unless a saved language preference exists; a later choice in Settings → General → Language is preserved. Adapts menu, dialog and field content to Arabic while protecting popup and drag coordinates and left-to-right code, terminals and technical values. Version 1.0.3 conditionally mirrors the chat sidebar to the right and the tools panel to the left using fingerprint-verified native geometry and title-scroll adapters. A page refresh and the native activation markers are required; unknown native builds keep their original geometry. The send action occupies the left edge, while navigation labels align right and their primary icons left. Rendered placement still requires validation in the actual window. Does not translate conversations, file contents, native OS dialogs, hard-coded third-party text, or all text captured before a language switch. Tested with DSH 0.2.2-rc.2."
+  }
+}

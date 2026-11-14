@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.dsh/
+localdocs/
+dist/
+coverage/
+*.tgz
+*.log
+.DS_Store
+Thumbs.db
+# client.js is intentionally committed: installing does not require a build.

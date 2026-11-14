@@ -1,0 +1,77 @@
+name: "Compatibility report / بلاغ توافق"
+description: "Report DSH update or native-asset guard behavior without bypassing compatibility protections."
+title: "[Compatibility]: "
+labels: ["compatibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The current exact target is DSH 0.2.2-rc.2 with @local/dsh-arabic-ui 1.0.3.
+        A DSH update can change assets while the cloned plugin folder survives. Native adapters intentionally fail closed on unknown versions or fingerprints.
+        Do not relax hashes or version guards, edit app.asar, or request an automatic version exemption to make this report pass.
+        Use the [security policy](<https://github.com/Mstrq4/dsh-polyglot/security/policy>) privately for vulnerabilities. Remove credentials, profile tokens, private URLs, and conversation content.
+  - type: input
+    id: dsh-version
+    attributes:
+      label: "Exact current DSH version"
+      placeholder: "0.2.2-rc.2"
+    validations:
+      required: true
+  - type: input
+    id: bundle-version
+    attributes:
+      label: "Installed DSH Polyglot bundle version"
+      placeholder: "1.0.3"
+    validations:
+      required: true
+  - type: input
+    id: prior-version
+    attributes:
+      label: "Previous DSH version, if this followed an update"
+      description: "State unknown or not applicable if needed; do not infer that a previous build was visually certified."
+  - type: input
+    id: environment
+    attributes:
+      label: "Operating system and app environment"
+      description: "Describe Desktop or Web context without private URLs, usernames, or installation paths."
+    validations:
+      required: true
+  - type: input
+    id: carrier
+    attributes:
+      label: "Carrier from native status only"
+      description: "Copy the status carrier field; use unavailable if not accessible. Do not guess it from the app context."
+      placeholder: "dsh-app: / http: / https: / unknown / unavailable"
+    validations:
+      required: true
+  - type: textarea
+    id: native-status
+    attributes:
+      label: "Safe native status and refresh evidence"
+      description: "Only include nativeLayout/nativeRows, adapter available/reason/revision, and whether the existing window was refreshed. Do not attach complete boot data, profile data, URLs, or conversation contents. State unavailable where necessary."
+      placeholder: "nativeLayout=false; nativeRows=false; reason=unsupported-release; refreshed=yes; visual check=unavailable"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Minimal reproduction and expected versus actual behavior"
+      description: "Distinguish an intentional guard refusal from a regression on the exact supported build. Say whether language registration, menus, switches, or native frame geometry is affected."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Optional sanitized evidence"
+      description: "Redact screenshots and minimal errors before upload. Do not include profile tokens, credentials, private URLs, conversation content, or a full profile export."
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Compatibility safety"
+      options:
+        - label: "I have not edited DSH installation files or relaxed version/fingerprint guards to obtain this result."
+          required: true
+        - label: "I understand native server readiness and passing source tests are not proof of rendered RTL layout."
+          required: true
+        - label: "This public report contains no credentials, profile tokens, private URLs, conversation content, or vulnerability/exploit details."
+          required: true

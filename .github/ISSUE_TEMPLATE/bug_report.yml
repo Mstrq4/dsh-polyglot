@@ -1,0 +1,92 @@
+name: "Bug report / بلاغ عن خلل"
+description: "Report a reproducible Arabic interface or plugin behavior problem with safe evidence."
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! Arabic or English is welcome. DSH Polyglot is a nonofficial community plugin.
+        The reviewed target is bundle 1.0.3 with DSH 0.2.2-rc.2; tests do not certify browser layout.
+        For vulnerabilities use the [security policy](<https://github.com/Mstrq4/dsh-polyglot/security/policy>), not this public form.
+        Remove credentials, profile tokens, private URLs, user messages, and private conversation content from all evidence.
+  - type: input
+    id: dsh-version
+    attributes:
+      label: "Exact DSH version"
+      description: "Copy the full release version, including prerelease suffix. Do not paste installation paths."
+      placeholder: "0.2.2-rc.2"
+    validations:
+      required: true
+  - type: input
+    id: bundle-version
+    attributes:
+      label: "DSH Polyglot bundle version"
+      description: "The current package ID is @local/dsh-arabic-ui."
+      placeholder: "1.0.3"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: "Operating system and app environment"
+      description: "Give OS/version and Desktop or Web app context; omit usernames, private URLs, and local paths."
+      placeholder: "Windows 11; Desktop window"
+    validations:
+      required: true
+  - type: input
+    id: carrier
+    attributes:
+      label: "Carrier from native status only"
+      description: "Copy only the carrier field from the plugin status. Do not infer it from the browser or installation type; use unavailable if you cannot read status."
+      placeholder: "dsh-app: / http: / https: / unknown / unavailable"
+    validations:
+      required: true
+  - type: input
+    id: native-status
+    attributes:
+      label: "Native activation and refresh evidence"
+      description: "Provide only nativeLayout, nativeRows, and whether the existing window was refreshed. Server readiness alone is not visible activation. State unavailable when not checked."
+      placeholder: "nativeLayout=false; nativeRows=false; refreshed=yes; visual check=unavailable"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Minimal steps to reproduce"
+      description: "Name the affected menu, dialog, or field and selected language. Use invented, nonsensitive text."
+      placeholder: |
+        1. Select Arabic.
+        2. Open ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior"
+      description: "For layout bugs include narrow/wide width context and whether the English interface is affected."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Optional redacted screenshots or minimal logs"
+      description: "Use a clean demonstration. Remove tokens, credentials, private URLs, paths/usernames, and conversation content before uploading; never attach a profile export."
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Before submitting"
+      options:
+        - label: "I searched existing issues for the same problem."
+          required: true
+        - label: "This public report contains no credentials, profile tokens, private URLs, conversation content, or vulnerability/exploit details."
+          required: true
+        - label: "I reported unavailable native or visual checks honestly rather than treating tests or server readiness as layout proof."
+          required: true

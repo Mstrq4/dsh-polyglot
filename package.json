@@ -1,0 +1,36 @@
+{
+  "name": "@local/dsh-arabic-ui",
+  "version": "1.0.3",
+  "description": "Arabic interface with fingerprint-guarded native RTL geometry, left-edge send action and native locale dictionaries.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Mstrq4/dsh-polyglot.git" },
+  "homepage": "https://github.com/Mstrq4/dsh-polyglot#readme",
+  "bugs": { "url": "https://github.com/Mstrq4/dsh-polyglot/issues" },
+  "keywords": ["deepseek-harness", "dsh", "arabic", "rtl", "i18n", "localization", "language-pack", "cordis"],
+  "engines": { "dsh": "0.2.2-rc.2" },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md", "README.ar.md", "AGENTS.md", "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md", "CHANGELOG.md", "docs", "LICENSE", "src", "dictionaries", "scripts"],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test:portable": "node --test --test-isolation=none test/publication.test.mjs test/bidi-regression.test.mjs test/popup-direction.test.mjs test/requested-layout.test.mjs",
+    "test": "node --test --test-isolation=none test/language-pack.test.mjs test/distribution.test.mjs test/build-safety.test.mjs test/bidi-regression.test.mjs test/popup-direction.test.mjs test/native-frame-bridge.test.mjs test/requested-layout.test.mjs test/native-control-direction.test.mjs",
+    "test:coverage": "node --test --test-isolation=none --experimental-test-coverage --test-coverage-include=src/*.js --test-coverage-include=scripts/build-client.mjs --test-coverage-include=index.js test/language-pack.test.mjs test/distribution.test.mjs test/build-safety.test.mjs test/bidi-regression.test.mjs test/popup-direction.test.mjs test/native-frame-bridge.test.mjs test/requested-layout.test.mjs test/native-control-direction.test.mjs"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-locale", "@deepseek-ai/dsh-client-ui-layout"]
+    }
+  }
+}
